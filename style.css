@@ -25,6 +25,9 @@ p {
     color: grey;
 }
 
+
+/*Links*/
+
 a:link,
 a:visited {
     background-color: rgb(55, 62, 158);
@@ -40,10 +43,13 @@ a:active {
     background-color: blue;
 }
 
+
+/*TABELA*/
+
 #teste {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 
@@ -68,3 +74,52 @@ a:active {
     background-color: rgb(55, 62, 158);
     color: white;
 }
+
+
+/*FIM TABELA*/
+
+
+/*CLEARFIX HACK */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*FIM CLEARFIX */
+
+
+/*MENU*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(55, 62, 158);
+}
+
+
+/*FIM MENU*/
