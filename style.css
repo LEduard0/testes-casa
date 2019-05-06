@@ -1,3 +1,16 @@
 h1 {
     color: lightgrey;
 }
+.out {
+    margin: 20px 0;
+    padding: 0.01em 16px;
+    background-color: #f1f1f1;
+}
+.in {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid rgb(55, 62, 158);
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
