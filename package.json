@@ -18,6 +18,7 @@
   "homepage": "https://github.com/LEduard0/testes-casa#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
