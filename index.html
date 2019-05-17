@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- FontAwesome -->>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Hello World</title>
     <style>
         /* Make the image fully responsive */
@@ -37,7 +39,7 @@
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" alt="Logo" style="width:40px;">
         </a>
 
@@ -50,7 +52,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -73,6 +75,74 @@
     </div>
     <br>
     <div class="container-fluid">
+        <div class="row" style="margin-right: 0px; margin-left: 0px;">
+            <div class="col-md bg-primary">
+                <button class="btn" data-toggle="collapse" data-target="#primary">Primary</button>
+                <div id="primary" class="collapse">
+                    <p>I have a Primary background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-white">
+                <button class="btn" data-toggle="collapse" data-target="#white">White</button>
+                <div id="white" class="collapse">
+                    <p>I have a White background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-success">
+                <button class="btn" data-toggle="collapse" data-target="#success">Success</button>
+                <div id="success" class="collapse">
+                    <p>I have a Success background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-info">
+                <button class="btn" data-toggle="collapse" data-target="#info">Info</button>
+                <div id="info" class="collapse">
+                    <p>I have a Info background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-warning">
+                <button class="btn" data-toggle="collapse" data-target="#warning">Warning</button>
+                <div id="warning" class="collapse">
+                    <p>I have a Warning background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-danger">
+                <button class="btn" data-toggle="collapse" data-target="#danger">Danger</button>
+                <div id="danger" class="collapse">
+                    <p>I have a Danger background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-dark text-white">
+                <button class="btn text-white" data-toggle="collapse" data-target="#dark">Dark</button>
+                <div id="dark" class="collapse">
+                    <p>I have a Dark background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-body">
+                <button class="btn" data-toggle="collapse" data-target="#body">Body</button>
+                <div id="body" class="collapse">
+                    <p>I have a Body background.</p>
+                </div>
+            </div>
+            <div class="col-md bg-light">
+                <button class="btn" data-toggle="collapse" data-target="#light">Light</button>
+                <div id="light" class="collapse">
+                    <p>I have a Light background.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row" style="margin-right: 0px; margin-left: 0px;">
+        <div class="col-md">
+            <img class="img-fluid" src="img/Penguins.jpg" alt="">
+        </div>
+        <div class="col-md float-right">
+            <img class="img-fluid" src="img/koala.jpg" alt="">
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
         <div id="accordion">
             <div class="card">
                 <div class="card-header">
@@ -82,12 +152,47 @@
                 </div>
                 <div id="card" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <div class="card" style="width:300px">
-                            <img class="card-img-top" src="img/koala.jpg" alt="Card image">
-                            <div class="card-body">
-                                <h3 class="card-title">Basic</h3>
-                                <p class="card-text">This is a text.</p>
-                                <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                        <div class="row">
+                            <div class="col">
+                                <p>To create a card use the class <code>.card</code> inside a div.<br>
+                                    <code>.card-body</code>: to create a body inside the card.<br>
+                                    <code>.card-title</code>: to add the title.<br>
+                                    <code>.card-img-top|bottom</code> to add image to a card.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                    <code>.card-link</code>: to a link inside the card.<br>
+                                    <code>.card-text</code>: text inside the body.<br>
+                                    <code>.stretched-link</code> to add a link box.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="img/koala.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h3 class="card-title">Basic</h3>
+                                    <p class="card-text">This is a text.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/background.gif" alt="Card image">
+                                <div class="card-body">
+                                    <h3 class="card-title">Basic</h3>
+                                    <p class="card-text">This is a text.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/Penguins.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h3 class="card-title">Basic</h3>
+                                    <p class="card-text">This is a text.</p>
+                                    <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -255,6 +360,43 @@
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#buttons">
+                            Buttons Example
+                        </a>
+                </div>
+                <div id="buttons" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>To create a button with BS4 use <code>.btn</code> class inside a <code>button</code>. <span data-toggle="tooltip" title="You can use contextual classes, like btn-danger, to color the buttons."><i class="fas fa-question-circle"></i></span>
+                        </p>
+                        <div class="btn-group">
+                            <button class="btn btn-info">Btn-Info</button>
+                            <button class="btn btn-success">Btn-Success</button>
+                            <button class="btn btn-warning">Btn-Warning</button>
+                            <button class="btn btn-danger">Btn-Danger</button>
+                            <button class="btn btn-white">Btn-White</button>
+                            <button class="btn btn-primary">Btn-Primary</button>
+                            <button class="btn btn-secondary">Btn-Secondary</button>
+                            <button class="btn">Btn-Default</button>
+                            <button class="btn btn-dark">Btn-Dark</button>
+                            <button class="btn btn-light">Btn-Light</button>
+                            <button class="btn btn-link">Btn-Link</button>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <p>To make a button appear disabled use <code>.disabled</code>. <span data-toggle="tooltip" title="To disable a button use disabled"><i class="fas fa-question-circle"></i></span></p>
+                                <button class="btn btn-primary disabled" disabled>Disabled Button</button>
+                            </div>
+                            <div class="col">
+                                <p>To make a button appear pressed use <code>.active</code>.</p>
+                                <button class="btn btn-primary active" disabled>Pressed Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <br>
@@ -262,5 +404,10 @@
 
     </div>
 </body>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 
 </html>
