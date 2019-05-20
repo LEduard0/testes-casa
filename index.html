@@ -3,6 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -63,6 +65,8 @@
             </ul>
         </div>
     </nav>
+    <!--Back to TOP Button-->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1>Bootstrap jumbotron</h1>
@@ -387,7 +391,7 @@
                         <hr>
                         <div class="row">
                             <div class="col">
-                                <p>To make a button appear disabled use <code>.disabled</code>. <span data-toggle="tooltip" title="To disable a button use disabled"><i class="fas fa-question-circle"></i></span></p>
+                                <p>To make a button appear disabled use <code>.disabled</code>. <span data-toggle="tooltip" title="To disable a button use 'disabled'"><i class="fas fa-question-circle"></i></span></p>
                                 <button class="btn btn-primary disabled" disabled>Disabled Button</button>
                             </div>
                             <div class="col">
@@ -405,17 +409,38 @@
 
     </div>
 </body>
-<!-- Footer -->
+<!-- INICIO Footer -->
 <footer>
     <div class="text-center py-3">© 2019 Developed by:
         <a> Luiz Eduardo</a>
     </div>
 </footer>
-<!-- Footer -->
+<!-- FIM Footer -->
 <script>
     $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip();
     });
+</script>
+<!--Botão Voltar ao topo-->
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
+        });
+        $('#scroll').click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+    });
+</script>
+
+</html>
 </script>
 
 </html>
