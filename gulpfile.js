@@ -26,3 +26,11 @@ gulp.task('minify-css', () => {
         .pipe(rename({ extname: '.min.css' }))
         .pipe(gulp.dest('css/'));
 });
+
+const imagemin = require('gulp-imagemin');
+
+gulp.task('minify-img', () =>
+    gulp.src('img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('img'))
+);
