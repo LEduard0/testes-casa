@@ -17,8 +17,16 @@
         .slider-inner img {
             width: 370px;
         }
+        
+        .slider-inner-2 img {
+            width: 100px;
+        }
+        
+        .slider-inner-2 {
+            width: 200px;
+        }
     </style>
-
+    <title>Slick Carousel</title>
 </head>
 
 <body>
@@ -52,10 +60,13 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1>Slick Carousel</h1>
+            <p>Este Slick é dividido em duas divs separadamente</p>
+            <p>Duvidas sobre Slick Carousel clique aqui: <a target="_blank" href="https://kenwheeler.github.io/slick/">https://kenwheeler.github.io/slick/</a></p>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row" style="margin: auto">
+            <!--Primeira Div possui carousel com todas as imagens-->
             <div class="slider slider-nav col">
                 <div class="slider-inner">
                     <img src="img/Penguins.jpg">
@@ -88,7 +99,51 @@
                     <img src="img/Koala.jpg ">
                 </div>
             </div>
+            <!--Essa div apenas ira receber as imagens da outra div-->
             <div class="slider-2 col">
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Slick Carousel</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="slider slider-nav-2 col" style="max-width: 200px; height: 100px">
+                <div class="slider-inner-2">
+                    <img src="img/cel1.png">
+                </div>
+                <div class="slider-inner-2">
+                    <img src="img/cel2.jpg">
+                </div>
+                <div class="slider-inner-2">
+                    <img src="img/cel3.jpg">
+                </div>
+                <div class="slider-inner-2">
+                    <img src="img/cel4.jpg">
+                </div>
+                <div class="slider-inner-2">
+                    <img src="img/cel5.jpg">
+                </div>
+            </div>
+            <div class="slider slider-for col" style="width: 450px">
+                <div class="slider-inner" style="margin: auto">
+                    <img src="img/cel1.png">
+                </div>
+                <div class="slider-inner" style="margin: auto">
+                    <img src="img/cel2.jpg">
+                </div>
+                <div class="slider-inner" style="margin: auto">
+                    <img src="img/cel3.jpg">
+                </div>
+                <div class="slider-inner" style="margin: auto">
+                    <img src="img/cel4.jpg">
+                </div>
+                <div class="slider-inner" style="margin: auto">
+                    <img src="img/cel5.jpg">
+                </div>
             </div>
         </div>
     </div>
@@ -104,6 +159,7 @@
             $(this).children('.slider-inner').slice(Math.round(size / 2), size).appendTo(".slider-2").closest();
         }
     });
+    //Slick com atributo asNavFor se referindo a div complementar
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -113,6 +169,7 @@
         focusOnSelect: true,
         centerPadding: true,
     });
+    //Transforma a Div que recebe os lides para um slick carousel
     $('.slider-2').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -121,6 +178,26 @@
         centerMode: false,
         focusOnSelect: true,
         centerPadding: true,
+    });
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav-2'
+    });
+    $('.slider-nav-2').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        focusOnSelect: true,
+        arrows: false,
+        centerMode: true,
+        vertical: true,
+        verticalSwiping: true,
+        infinite: false,
     });
 </script>
 
