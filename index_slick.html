@@ -159,10 +159,26 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Iframe Goggle Maps</h1>
+            <br>
+            <div class="btn-group">
+                <button id="showMap" class="btn btn-info">Show Map</button>
+                <button id="hideMap" class="btn btn-info">Hide Map</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="iframeMaps">
+        </div>
+    </div>
 </body>
 <!-- INICIO Footer -->
 <footer>
-    <div class="text-center py-3 ">
+    <div class="text-center py-3 ">© 2019 Developed by:
+        <a>Luiz Eduardo</a>
     </div>
 </footer>
 <!-- FIM Footer -->
@@ -170,67 +186,6 @@
 <script type="text/javascript " src="http://code.jquery.com/jquery-1.11.0.min.js "></script>
 <script type="text/javascript " src="http://code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
 <script type="text/javascript " src="slick/slick.min.js "></script>
-<script type="text/javascript ">
-    $(".slider ").each(function() {
-        size = $(this).children('.slider-inner').length;
-        if (size > 3) {
-            $(this).children('.slider-inner').slice(Math.round(size / 2), size).appendTo(".slider-2 ").closest();
-        }
-    });
-    //Slick com atributo asNavFor se referindo a div complementar
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-2',
-        arrows: false,
-        centerMode: false,
-        focusOnSelect: true,
-        centerPadding: true,
-    });
-    //Transforma a Div que recebe os lides para um slick carousel
-    $('.slider-2').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-nav',
-        arrows: false,
-        centerMode: false,
-        focusOnSelect: true,
-        centerPadding: true,
-    });
-
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: true,
-        asNavFor: '.slider-nav-2'
-    });
-    $('.slider-nav-2').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        focusOnSelect: true,
-        arrows: false,
-        centerMode: true,
-        vertical: true,
-        verticalSwiping: true,
-        infinite: false,
-    });
-    $(document).ready(function() {
-        $('#playVideo').on('click', function() {
-            $('.iframeVideo').empty();
-            $('<iframe>', {
-                src: 'https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com',
-                id: 'myFrame',
-                frameborder: 0,
-                scrolling: 'no',
-                height: '387px',
-                width: '517px',
-                allowfullscreen: 'yes'
-            }).appendTo('.iframeVideo');
-        });
-    });
-</script>
+<script type="text/javascript " src="js/scripts.min.js"></script>
 
 </html>
