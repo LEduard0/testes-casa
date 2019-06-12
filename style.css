@@ -1,0 +1,22 @@
+.slider-inner img {
+    width: 370px;
+    margin-top: 10px;
+}
+
+.slider-inner-2 img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.slider-vertical img {
+    width: 100px;
+}
+
+.slider-vertical {
+    width: 200px;
+}
+
+.iframeVideo {
+    left: -3870px !important;
+}
