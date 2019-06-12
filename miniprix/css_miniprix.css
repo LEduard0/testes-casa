@@ -1,0 +1,2316 @@
+@font-face {
+    font-family: 'hans_kendrickregular';
+    src: url('http://miniprix.vteximg.com.br/arquivos/HansKendrick-Regular.eot.css');
+    src: url('http://miniprix.vteximg.com.br/arquivos/HansKendrick-Regular.eot.css?#iefix') format('embedded-opentype'), url('http://miniprix.vteximg.com.br/arquivos/HansKendrick-Regular.woff.css') format('woff'), url('http://miniprix.vteximg.com.br/arquivos/HansKendrick-Regular.ttf.css') format('truetype'), url('http://miniprix.vteximg.com.br/arquivos/HansKendrick-Regular.svg.css#effraregular') format('svg');
+}
+
+@font-face {
+    font-family: 'hans_kendrickheavy';
+    src: url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Heavy.eot.css');
+    src: url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Heavy.eot.css#iefix') format('embedded-opentype'), url('http://miniprix.vteximg.com.br/arquivos/hanskendrick-heavy.woff.css') format('woff'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Heavy.ttf.css') format('truetype'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Heavy.svg.css#effraregular') format('svg');
+}
+
+@font-face {
+    font-family: 'hans_kendricklight';
+    src: url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Light.eot.css');
+    src: url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Light.eot.css#iefix') format('embedded-opentype'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Light.woff.css') format('woff'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Light.ttf.css') format('truetype'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Light.svg.css#effraregular') format('svg');
+}
+
+@font-face {
+    font-family: 'hans_kendrickmedium';
+    src: url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Medium.eot.css');
+    src: url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Medium.eot.css#iefix') format('embedded-opentype'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Medium.woff.css') format('woff'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Medium.ttf.css') format('truetype'), url('http://miniprix.vteximg.com.br/arquivos/hansKendrick-Medium.svg.css#effraregular') format('svg');
+}
+
+@-webkit-keyframes hideMenu {
+    from {
+        right: 0;
+    }
+    to {
+        right: -70%;
+    }
+}
+
+@keyframes hideMenu {
+    from {
+        right: 0;
+    }
+    to {
+        right: -70%;
+    }
+}
+
+@-webkit-keyframes hideSearch {
+    from {
+        right: 0;
+    }
+    to {
+        right: -70%;
+    }
+}
+
+@keyframes hideSearch {
+    from {
+        right: 0;
+    }
+    to {
+        right: -70%;
+    }
+}
+
+@-webkit-keyframes showMenu {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes showMenu {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes showSearch {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes showSearch {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+body {
+    line-height: 1;
+    font-family: 'hans_kendrickregular';
+    font-size: 14px;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.header-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99991;
+    transition: all 0.5s ease;
+}
+
+header.header-container.fixed .header {
+    background: #1A1A1A;
+}
+
+@media (min-width: 992px) {
+    header.header-container.fixed {
+        top: -50px;
+    }
+}
+
+div#extra-header-top {
+    padding-bottom: 51px;
+}
+
+.header .logo a {
+    display: block;
+}
+
+.header .logo a svg {
+    max-width: 170px;
+    width: 100%;
+    height: 52px;
+}
+
+a {
+    color: #1a1a1a;
+}
+
+a,
+button,
+input {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header,
+footer,
+section,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'hans_kendrickheavy';
+}
+
+a,
+button,
+input[type="submit"],
+input[type="button"],
+.btn,
+a:before,
+a:after {
+    cursor: pointer;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+span {
+    font-family: "hans_kendrickregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.welcome-bar {
+    background-color: #020202;
+    height: 51px;
+    line-height: 51px;
+    color: #999999;
+    font-family: 'hans_kendrickregular', Sans-Serif;
+    text-transform: uppercase;
+}
+
+.welcome-bar div.welcome p.welcome {
+    line-height: 51px;
+}
+
+.welcome-bar p,
+.welcome-bar a,
+.welcome-bar span {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 10px;
+}
+
+.welcome-bar p:hover,
+.welcome-bar a:hover,
+.welcome-bar span:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome-bar a:hover {
+    text-decoration: none;
+}
+
+.welcome-bar span i.fa-phone {
+    font-size: 12px;
+}
+
+.welcome-bar span i {
+    margin-right: 1px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    padding: 10px 0;
+    background: transparent;
+    transition: all .5s ease;
+}
+
+.header .button-menu-xs {
+    float: right;
+    padding-left: 0;
+    width: 16.66666667%;
+}
+
+.header .button-menu-xs .btn {
+    background-color: transparent;
+    color: #FFF;
+    font-size: 20px;
+    border: 0;
+    box-shadow: none;
+    padding-left: 9px;
+    padding-right: 15px;
+}
+
+.header .button-menu-xs .btn:hover {
+    background: transparent;
+    color: #FFF;
+    border: 0;
+}
+
+.header .logo {
+    text-align: center;
+    padding-right: 0;
+}
+
+#menu-mobile ul li,
+#menu-mobile h3,
+.mobile-filter ul li,
+.mobile-filter h3 {
+    display: block;
+    float: none;
+}
+
+#menu-mobile ul,
+.mobile-filter ul {
+    display: block;
+}
+
+#menu-mobile ul li a,
+#menu-mobile h3 a,
+.mobile-filter ul li a,
+.mobile-filter h3 a,
+#menu-mobile .submenu-content .col-sm-3 h5 {
+    color: #000;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#menu-mobile ul li.primary-item {
+    text-transform: uppercase;
+    font-family: 'hans_kendrickheavy';
+    border-bottom: 2px solid #F4F4F4;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#menu-mobile ul li.primary-item::after {
+    content: "\f0fe";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    font-size: 18px;
+}
+
+#menu-mobile ul li.primary-item.up::after {
+    content: "\f146";
+}
+
+#menu-mobile ul li.primary-item .submenu-box {
+    display: none;
+}
+
+#menu-mobile ul li.primary-item .submenu-box .submenu-content ul {
+    margin-left: -15px;
+}
+
+#menu-mobile ul li.primary-item .submenu-box .submenu-content ul li,
+#menu-mobile .submenu-content .col-sm-3 h5 {
+    font-family: 'hans_kendrickregular';
+    text-transform: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-mobile ul li.primary-item .submenu-box .submenu-content ul li a {
+    padding: 0;
+    margin: 0;
+}
+
+.header .mini-cart .btn {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .classSearch {
+    width: 100%;
+    float: left;
+    background: #FFF;
+    height: calc(100% - 56px);
+    overflow: hidden;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .search-bottom-bar {
+    background: #ec594d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .search-bottom-bar span {
+    display: block;
+    padding: 10px 0;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .busca {
+    padding: 25px;
+    float: left;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .busca input {
+    padding: 10px 12px;
+    font-size: 16px;
+    height: 45px;
+    color: #1a1a1a;
+    width: 75%;
+    position: relative;
+    z-index: 2;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 30px;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .busca input[type="button"] {
+    width: 25%;
+    font-weight: bold;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .busca legend,
+.mini-cart-xs .btn-pesquisa .result-search .busca label,
+.mini-cart-xs .btn-pesquisa .result-search .busca select {
+    display: none;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .classSearch .heading {
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-top: 50px;
+    color: #1a1a1a;
+}
+
+.mini-cart-xs .btn-pesquisa .result-search .classSearch .heading span {
+    font-family: 'hans_kendrickheavy';
+}
+
+.result-search .fechar-psq {
+    background: #1A1A1A;
+    padding: 14px 30px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.mosaicos-footer {
+    margin-bottom: 75px;
+}
+
+.mosaicos-footer .item {
+    background-position: right center;
+    margin: 10px 15px 10px 0;
+    position: relative;
+    background-color: #f7f7f9;
+    min-height: 320px;
+    background-repeat: no-repeat;
+    padding-right: 0;
+    width: calc(50% - 15px);
+    background-image: url("https://miniprix.vteximg.com.br/arquivos/ids/540612/mozaicmai3footerstanga.jpg?v=636948927202230000")
+}
+
+.mosaicos-footer .item .box-img .description-box-img {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 40px 0 40px 40px;
+    text-align: left;
+}
+
+.mosaicos-footer .item .description-box-img p {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 25px;
+    font-family: 'hans_kendrickheavy';
+    color: #1a1a1a;
+}
+
+.mosaicos-footer .item .description-box-img a,
+.footer .imbraca-te .botao,
+.home-mosaicos a.botao,
+a.botao {
+    font-size: 18px;
+    color: #020202;
+    border: 2px solid #020202;
+    padding: 15px 20px;
+    border-radius: 25px;
+    clear: both;
+    margin-top: 10px;
+    display: inline-block;
+    font-family: 'hans_kendrickheavy';
+    letter-spacing: 0.5px;
+}
+
+.home-mosaicos .mosaicos-ordem {
+    flex-flow: row wrap;
+}
+
+.mosaicos-footer .item .box-img .description-box-img .box-banner {
+    display: none!important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div#extra-footer-top p {
+    font-size: 48px;
+    color: #020202;
+    text-align: center;
+    font-family: 'hans_kendrickheavy';
+}
+
+div#extra-footer-top ul.social-icon {
+    display: block;
+    margin: 40px auto 90px;
+    text-align: center;
+}
+
+div#extra-footer-top ul.social-icon li,
+#menu-mobile .menu-mobile-account ul.social-icon li {
+    display: inline-block;
+    margin: 0 47.5px;
+}
+
+div#extra-footer-top ul.social-icon li a,
+#menu-mobile .menu-mobile-account ul.social-icon li a {
+    color: #C5C5C7;
+    font-size: 48px;
+    transition: color 1s;
+}
+
+div#extra-footer-top ul.social-icon li a:hover {
+    color: #020202;
+}
+
+div#extra-footer-top ul.social-icon li:first-child,
+#menu-mobile .menu-mobile-account ul.social-icon li:first-child {
+    margin-left: 0;
+}
+
+div#extra-footer-top ul.social-icon li:last-child,
+#menu-mobile .menu-mobile-account ul.social-icon li:last-child {
+    margin-right: 0;
+}
+
+div#home-extra-middle {
+    background: url(http://miniprix.vteximg.com.br/arquivos/bg-formas.png) no-repeat center;
+    overflow: visible!important;
+    background-color: #f7f7f9;
+    min-height: 383px;
+    overflow: hidden!important;
+    padding: 40px;
+}
+
+div#home-extra-middle .square {
+    position: absolute;
+    top: 35px;
+    left: -22px;
+    width: 44px;
+    height: 44px;
+}
+
+div#home-extra-middle .oblique {
+    position: absolute;
+    right: -50px;
+    bottom: 45px;
+    width: 114px;
+    height: 245px;
+}
+
+div#home-extra-middle .square svg rect {
+    fill: #59C5C5;
+}
+
+div#home-extra-middle .oblique svg polygon {
+    fill: #C0DA67;
+}
+
+div#home-extra-middle a.botao {
+    background: #F05A28;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 22px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid #F05A28;
+}
+
+div#home-extra-middle a.botao:hover {
+    color: #F05A28;
+    background: #FFF;
+    text-decoration: none;
+}
+
+div#home-extra-middle h1 {
+    font-family: 'hans_kendrickheavy';
+    font-weight: bold;
+    font-size: 48px;
+    color: #020202;
+    margin-top: 0;
+    /* margin-top: 55px; */
+}
+
+div#home-extra-middle p {
+    font-size: 18px;
+    color: #020202;
+    margin: 40px auto;
+    line-height: 26px;
+}
+
+section#home-content {
+    clear: both;
+    text-align: center;
+}
+
+section#home-content .home-shelves {
+    display: none;
+}
+
+div#home-extra-shelves-1 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+div#home-extra-shelves-1 h1 {
+    font-family: 'hans_kendrickheavy';
+    font-size: 48px;
+    color: #020202;
+    font-weight: bold;
+    text-align: center;
+    margin: 65px auto 30px;
+}
+
+#home-extra-shelves-1 .navigation ul {
+    border: 0;
+}
+
+.navigation ul {
+    display: table;
+    margin: 0 auto 55px;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+#home-extra-shelves-1 .navigation ul li#item-active {
+    opacity: 1;
+}
+
+#home-extra-shelves-1 .navigation ul li {
+    min-width: 25%;
+    display: inline-block;
+}
+
+#home-extra-shelves-1 .navigation ul li {
+    opacity: .5;
+}
+
+#home-extra-shelves-1 .navigation ul li:hover {
+    opacity: 1;
+}
+
+#home-extra-shelves-1 .navigation ul li a {
+    font-size: 14px;
+    color: #020202;
+    text-transform: uppercase;
+    font-family: 'hans_kendrickheavy';
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+#home-extra-shelves-1 .navigation ul li {
+    transition: all .5s ease-in;
+}
+
+section#home-content .home-shelves .prateleira {
+    float: left;
+    width: 100%;
+}
+
+section#home-content #femei {
+    display: block;
+}
+
+.home-shelves .prateleira h2 {
+    display: none;
+}
+
+.prateleira.vitrine>ul {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0;
+}
+
+.prateleira .box-item {
+    opacity: 1;
+    display: block;
+    padding: 10px 15px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    max-width: 277px;
+    margin: 0 auto;
+}
+
+.prateleira .box-item:hover .button-shelves {
+    display: block;
+    bottom: 0;
+}
+
+.prateleira .product-top {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.prateleira .product-image {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.prateleira .product-image img {
+    display: block;
+    max-width: 100%;
+    height: auto ! important;
+    width: 100% ! important;
+    margin: 0 auto;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.prateleira .button-shelves {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -110px;
+    display: none;
+    animation-name: buttonShelves;
+    -webkit-animation-name: buttonShelves;
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+}
+
+@keyframes buttonShelves {
+    from {
+        bottom: -110px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@-webkit-keyframes buttonShelves {
+    from {
+        bottom: -110px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+.prateleira .button-shelves .thickbox {
+    font-size: 0;
+}
+
+.prateleira .button-shelves .thickbox:hover {
+    background: #409c40;
+}
+
+.prateleira .button-shelves .btn-add-buy-button-asynchronous,
+.prateleira .button-shelves .thickbox {
+    font-size: 14px;
+    font-family: 'hans_kendrickheavy';
+    color: #fff;
+    padding: 20px 10px;
+    text-decoration: none;
+    background: #00b07b;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.prateleira .button-shelves .thickbox::before {
+    content: "Pune In Cos";
+    font-size: 14px;
+}
+
+.prateleira .button-shelves .thickbox::after {
+    font-size: 14px;
+    content: "\f07a";
+    margin-left: 5px;
+    font-family: 'FontAwesome';
+}
+
+.prateleira .product-name {
+    display: block;
+    min-height: 40px;
+    text-align: left;
+    position: relative;
+    padding-right: 15px;
+}
+
+.prateleira .product-name {
+    padding-right: 20px;
+}
+
+.prateleira .product-name a {
+    display: block;
+    color: #020202;
+    font-size: 14px;
+    margin: 15px auto;
+    line-height: 16px;
+    font-family: 'hans_kendrickmedium';
+    word-break: break-word;
+    overflow: hidden;
+    height: 34px;
+    text-decoration: none
+}
+
+.prateleira span.wishlist-shelf {
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'FontAwesome';
+    color: #f89e95;
+}
+
+.prateleira span.wishlist-shelf .fa-times-circle,
+body#product-page .prod-desejos i.fa-times-circle {
+    background: url(https://miniprix.vteximg.com.br/arquivos/lista-desejos.png) no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 18px;
+}
+
+.prateleira span.wishlist-shelf .fa-times-circle {
+    color: #dcdcdc;
+    float: left;
+}
+
+.prateleira .product-name::before,
+span.wishlist-shelf .fa-times-circle {
+    display: none;
+}
+
+.prateleira .price {
+    display: block;
+    padding: 0;
+    text-align: left;
+    min-height: 40px;
+}
+
+.prateleira .price a {
+    display: block;
+    text-decoration: none;
+}
+
+.prateleira .price .best-price {
+    display: inline-block;
+    color: #020202;
+    font-size: 14px;
+    font-family: 'hans_kendrickheavy';
+    line-height: 16px;
+    text-align: left;
+}
+
+.prateleira .price .list-price {
+    display: inline-block;
+    margin-left: 30px;
+    color: #c1c1c1;
+    font-size: 14px;
+    font-family: "hans_kendrickregular";
+    text-decoration: line-through;
+}
+
+span.wishlist-shelf {
+    cursor: pointer;
+}
+
+.discountHightLight {
+    position: absolute;
+    top: 45px;
+}
+
+.discountHightLight .hightLightCollections p.flag {
+    display: none!important;
+}
+
+#selo-desconto p,
+.discountHightLight p.flag {
+    display: block;
+    background: #00B07C;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 2;
+    font-family: 'hans_kendrickheavy';
+    font-size: 10px;
+    text-align: center;
+}
+
+#selo-desconto p,
+.discountHightLight p.flag {
+    margin-bottom: 7px;
+}
+
+.discountHightLight p.flag {
+    background: #4a70db;
+    position: relative;
+    top: 5px;
+}
+
+.prateleira.vitrine>ul>li,
+.n1colunas>ul>li,
+.n2colunas>ul>li,
+.n3colunas>ul>li,
+.n4colunas>ul>li,
+.n5colunas>ul>li {
+    float: left;
+    vertical-align: top;
+    width: 50%;
+    padding: 20px 15px;
+    margin: 0;
+}
+
+.footer {
+    padding: 15px 0 25px;
+    margin-top: 20px;
+}
+
+.footer .container {
+    border-top: 3px solid #020202;
+}
+
+.footer .imbraca-te h2 {
+    font-family: 'hans_kendrickheavy';
+    padding-top: 25px;
+    font-size: 34px;
+    color: #020202;
+}
+
+.footer .imbraca-te .botao {
+    padding: 12px 25px;
+}
+
+.footer .formaPagto {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+}
+
+.footer .formaPagto svg,
+.footer .formaPagto img {
+    max-width: 34px;
+    max-height: 22px;
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #1a1a1a
+}
+
+.footer b {
+    color: #020202;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 35px 0 13px;
+    font-family: 'hans_kendrickheavy';
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.footer li a:hover {
+    color: #020202;
+}
+
+.footer li a,
+.footer span {
+    color: #8a8a8d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 2px 0;
+    display: block;
+    text-decoration: none;
+}
+
+.copy-right p,
+.copy-right p a {
+    line-height: 41px;
+    font-size: 14px;
+    color: #8a8a8d;
+    font-family: 'hans_kendrickregular', Sans-Serif;
+    margin: 0;
+}
+
+span.powered {
+    position: absolute;
+    right: 0;
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.copy-right p span.websiteFooter,
+.copy-right p span.trade {
+    color: #b5b5b5;
+}
+
+span.powered span,
+span.powered span.vtex svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65px;
+}
+
+span.powered .acupula,
+span.powered .acupula svg {
+    width: 23px;
+    margin: 0 20px 1px 15px;
+}
+
+.copy-right p a {
+    text-decoration: underline;
+}
+
+span.powered .twoFrom,
+span.powered .twoFrom svg {
+    width: 46px;
+    margin-bottom: 1px;
+}
+
+span.powered span.vtex svg,
+span.powered span.acupula svg,
+span.powered span.twoFrom svg {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+}
+
+.newsletter {
+    margin: 85px auto 100px;
+    max-width: 720px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    line-height: 15px;
+    font-family: 'hans_kendrickregular';
+    color: #1a1a1a;
+}
+
+.newsletter a {
+    color: #1a1a1a;
+    font-size: 14px;
+    line-height: 15px;
+    font-family: 'hans_kendrickregular';
+    font-weight: normal;
+}
+
+.newsletter h3.newsletter-title {
+    width: 100%;
+    font-size: 0;
+    display: block;
+    color: #020202;
+    margin: 0 auto 35px;
+    padding: 0;
+}
+
+.newsletter h3.newsletter-title:before {
+    content: "Afla cand primim marfa noua, direct pe mail";
+    font-size: 48px;
+}
+
+.newsletter fieldset {
+    text-align: left;
+    max-width: 100%;
+}
+
+.newsletter fieldset input[type="text"] {
+    width: 223px;
+    margin-right: 20px;
+    border: none;
+    border-bottom: 1px solid #020202;
+    border-radius: 0;
+    font-family: 'hans_kendrickheavy';
+    color: #020202;
+    font-size: 18px;
+    height: 39px;
+}
+
+.newsletter fieldset input#newsletterButtonOK,
+fieldset.error+input.newsletter-button-back {
+    width: 206px;
+    height: 51px;
+    background: #00b07b;
+    color: #FFF;
+    font-size: 18px;
+    border-radius: 50px;
+    font-family: 'hans_kendrickheavy';
+}
+
+.copy-right {
+    background-color: #020202;
+    min-height: 41px;
+}
+
+#scroll {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    margin-top: -17px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #000;
+    text-align: center;
+    border: 1px solid #000;
+    z-index: 99;
+    display: none;
+    font-size: 22px;
+    color: #FFF
+}
+
+#scroll:hover {
+    background-color: #333;
+    opacity: .5;
+}
+
+.home-mosaicos {
+    margin-bottom: 100px;
+}
+
+.home-mosaicos div {
+    text-align: center;
+}
+
+.home-mosaicos h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #020202;
+    margin: 60px auto;
+    font-family: 'hans_kendrickheavy';
+}
+
+.home-mosaicos .mosaico-item div {
+    border: 4px solid transparent;
+    overflow: hidden;
+}
+
+.home-mosaicos .mosaico-item a img {
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease-in;
+}
+
+.home-mosaicos .mosaico-item p,
+.banner-departament-item p,
+.home-mosaicos .mosaico-item p a,
+.banner-departament-item p a {
+    font-size: 14px;
+    font-family: 'hans_kendrickheavy';
+    color: #1A1A1A;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 19px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.home-mosaicos .mosaico-item a img:hover {
+    transform: scale(1.15);
+}
+
+.home-mosaicos .mosaico-item a img {
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease-in;
+}
+
+.mosaico-item:nth-child(5),
+.mosaico-item:last-child {
+    margin-top: -0.1%;
+}
+
+@media (max-width: 1290px) {
+    .copy-right p {
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .copy-right p {
+        position: relative;
+    }
+    .copy-right p .websiteFooter {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        height: 56px;
+    }
+    .header .logo a {
+        text-align: left;
+        padding-left: 15px;
+    }
+    .header .logo a svg {
+        max-width: 99px;
+        height: 32px;
+        padding-top: 6px;
+    }
+    .container,
+    .navbar-static-top .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container {
+        width: 100% !important;
+    }
+    .btn-default {
+        background-color: transparent!important;
+        color: #FFF!important;
+        font-size: 17px!important;
+        border: 0!important;
+    }
+    #menu-mobile .close-menu {
+        padding: 14px 30px;
+    }
+    #menu-mobile .close-menu i {
+        padding: 4px 0;
+    }
+    div#extra-footer-top ul.social-icon,
+    #menu-mobile .menu-mobile-account ul.social-icon {
+        margin: 40px auto 40px;
+    }
+    div#extra-footer-top ul.social-icon li,
+    #menu-mobile .menu-mobile-account ul.social-icon li {
+        margin: 0 !important;
+        width: 19%;
+    }
+    div#extra-footer-top ul.social-icon li a,
+    #menu-mobile .menu-mobile-account ul.social-icon li a {
+        font-size: 35px;
+    }
+    .mini-cart-xs {
+        padding: 5px 0 0!important;
+        display: inline-flex !important;
+        justify-content: flex-end;
+    }
+    .mini-cart-xs .btn {
+        margin: 0 8px;
+    }
+    .btn-wishlist a {
+        color: #FFF;
+    }
+    .header .mini-cart-xs a.btn-login,
+    .header .mini-cart-xs a.btn-login svg {
+        width: 15px;
+        height: 20px;
+    }
+    .mini-cart-xs .result-search {
+        display: none;
+    }
+    .mosaicos-footer {
+        margin-bottom: 45px;
+    }
+    .mosaicos-footer .item {
+        margin: 10px 15px;
+        padding: 0;
+        width: calc(100% - 30px);
+        background-image: url(https://miniprix.vteximg.com.br/arquivos/ids/547285/mozaic%20iunfooter%20stanga.jpg?v=636954072597800000);
+    }
+    .mosaicos-footer .item .box-img .description-box-img {
+        width: 100%;
+        float: none;
+        top: 17%;
+        position: absolute;
+    }
+    .mosaicos-footer .item .description-box-img p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .newsletter {
+        display: none;
+    }
+    div#home-extra-bottom {
+        margin-top: 40px;
+    }
+    div#home-extra-bottom,
+    section#home-content {
+        overflow: hidden;
+    }
+    .home-mosaicos h1,
+    div#home-extra-middle h1,
+    div#home-extra-shelves-1 h1,
+    div#extra-footer-top p {
+        font-size: 32px;
+        word-break: break-word;
+    }
+    .footer .mobile-footer {
+        padding: 15px 0;
+    }
+    .footer .mobile-footer>div {
+        padding: 0;
+    }
+    #logo-mobile {
+        width: 50%
+    }
+    .home-mosaicos .mosaico-item:first-child .box-banner,
+    .home-mosaicos .mosaico-item:nth-child(2) .box-banner {
+        max-height: 300px;
+    }
+    div#home-extra-middle p {
+        margin: 20px auto;
+    }
+    section#home-content .row {
+        margin: 0 10px;
+    }
+    #home-extra-shelves-1 .navigation ul {
+        margin-bottom: 0;
+    }
+    .prateleira.vitrine>ul {
+        margin: 0;
+    }
+    ul li.femei {
+        padding: 0px !important;
+    }
+    .prateleira .box-item {
+        padding: 10px;
+    }
+    .footer a {
+        display: inline-block;
+    }
+    .footer b {
+        padding: 13px 0;
+    }
+    .footer .mobile-footer ul li a {
+        font-family: 'hans_kendrickheavy';
+        font-size: 14px;
+        color: #020202;
+    }
+    .footer .mobile-footer .formaPagto {
+        display: block;
+        margin: 0;
+    }
+    .copy-right {
+        min-height: 1px;
+    }
+    .copy-right p,
+    .copy-right p a {
+        font-size: 10px;
+        padding: 10px 0;
+        line-height: normal;
+    }
+    #scroll {
+        left: 20px;
+        right: inherit;
+        bottom: 30px;
+        top: 90%;
+        opacity: 1!important;
+        border-color: #FFF;
+    }
+    .footer {
+        padding: 15px 15px 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 17px 0;
+        max-height: 81px;
+        line-height: 14px;
+    }
+    .header .button-menu-xs .btn {
+        padding: 12px;
+    }
+    #menu-mobile,
+    .mobile-filter {
+        position: absolute;
+        width: 250px;
+        right: 65%;
+        top: 40px;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 15px;
+        z-index: 9999999;
+        box-shadow: 0 0 5px #ddd;
+    }
+    .header .logo {
+        text-align: left;
+    }
+    .home-mosaicos,
+    div#home-extra-middle,
+    section#home-content,
+    div#home-extra-bottom,
+    div#extra-footer-top {
+        overflow: hidden!important;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        background-color: #1A1A1A;
+    }
+    #menu-mobile,
+    .mini-cart-xs .result-search {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        top: -2px;
+        bottom: 0;
+        background-color: transparent;
+        height: 100%;
+        padding: 10px 20px;
+        z-index: 9999999;
+        overflow: auto;
+    }
+    div#menu-mobile {
+        padding: 0;
+    }
+    .show-menu {
+        -webkit-animation-name: showMenu;
+        animation-name: showMenu;
+        -webkit-animation-duration: .500s;
+        animation-duration: .500s;
+    }
+    #menu-mobile .header-menu-mobile {
+        display: block;
+    }
+    #menu-mobile .close-menu {
+        color: #FFF!important;
+        font-size: 20px;
+        -webkit-transition: 0.3s all;
+        transition: 0.3s all;
+        background: #1A1A1A;
+        padding: 30px;
+    }
+    .container-mobile-menu {
+        width: 100%;
+        background: #FFF;
+        height: calc(100% - 80px);
+        padding: 0;
+        overflow: auto;
+    }
+    #menu-mobile .link-top {
+        float: left;
+        width: 100%;
+        padding-bottom: 10px;
+        background: #FFF;
+    }
+    .hide-menu {
+        -webkit-animation-name: hideMenu;
+        animation-name: hideMenu;
+        -webkit-animation-duration: .500s;
+        animation-duration: .500s;
+    }
+    #menu-mobile .link-top .items-top {
+        background: #F1F1F2;
+    }
+    #menu-mobile .header-menu-mobile {
+        display: block;
+    }
+    #menu-mobile .link-top .items-top a {
+        padding: 20px 0;
+        float: left;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        color: #231f20;
+        text-transform: uppercase;
+        font-family: 'hans_kendrickheavy';
+        text-decoration: none;
+    }
+    #menu-mobile .link-top .items-top:nth-child(2) {
+        border-left: 2px solid #e9eaeb;
+        border-right: 2px solid #e9eaeb;
+    }
+    .container-mobile-menu .recebe-menu,
+    .container-mobile-menu .menu {
+        width: 100%;
+        float: left;
+        padding: 0 20px;
+    }
+    .menu-mobile-account {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    .show-menu {
+        -webkit-animation-name: showMenu;
+        animation-name: showMenu;
+        -webkit-animation-duration: .500s;
+        animation-duration: .500s;
+    }
+    .hide-menu {
+        -webkit-animation-name: hideMenu;
+        animation-name: hideMenu;
+        -webkit-animation-duration: .500s;
+        animation-duration: .500s;
+    }
+    .show-search {
+        -webkit-animation-name: showSearch;
+        animation-name: showSearch;
+        -webkit-animation-duration: .500s;
+        animation-duration: .500s;
+    }
+    .hide-search {
+        -webkit-animation-name: hideSearch;
+        animation-name: hideSearch;
+        -webkit-animation-duration: .500s;
+        animation-duration: .500s;
+    }
+    .mosaicos-footer .item .description-box-img a,
+    .footer .imbraca-te .botao,
+    .home-mosaicos a.botao,
+    a.botao {
+        background: #FFF;
+    }
+    .mosaicos-footer .bottomBanner .box-banner {
+        margin: 15px;
+    }
+    div#home-extra-middle {
+        padding-bottom: 30px;
+    }
+    .copy-right p {
+        text-align: center;
+    }
+    span.powered {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    .newsletter h3.newsletter-title {
+        font-size: 46px;
+    }
+    .newsletter fieldset input[type="text"] {
+        width: 223px;
+        margin-right: 20px;
+        /* padding-left: 16px; */
+    }
+    .newsletter fieldset input#newsletterButtonOK,
+    fieldset.error+input.newsletter-button-back {
+        margin-top: 0;
+    }
+    .footer .imbraca-te h2 {
+        display: inline-block;
+        width: 50%;
+        vertical-align: bottom;
+    }
+    .footer .formaPagto {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    #home-extra-shelves-1 .navigation ul li {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    #menu-mobile .close-menu {
+        padding: 14px 30px;
+    }
+    .container-mobile-menu {
+        height: calc(100% - 56px);
+    }
+}
+
+@media (min-width: 768px) {
+    .header .button-menu-xs {
+        left: 68%;
+        top: -2px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header .icones {
+        left: 36%;
+    }
+    .mosaico-item {
+        width: 50% !important;
+        flex: 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+.desktop-menu .menu,
+.desktop-menu .menu>ul {
+    display: block;
+    margin: 0;
+}
+
+.desktop-menu .menu>ul li.primary-item {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 2px solid transparent;
+    padding: 13px 0;
+    margin-top: 5px;
+    line-height: 14px;
+}
+
+.desktop-menu .menu>ul li.primary-item>a {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'hans_kendrickheavy', Sans-Serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    padding: 13px 25px;
+}
+
+.desktop-menu .menu>ul li.primary-item:hover .submenu-box {
+    display: block;
+    opacity: 1;
+    top: 100%;
+    animation-name: efect-menu;
+    animation-duration: .5s;
+}
+
+.desktop-menu .menu>ul li.primary-item:hover>a::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background: url(https://miniprix.vteximg.com.br/arquivos/seta-megamenu.png) no-repeat bottom center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 22px;
+    animation-name: efect-seta-menu;
+    animation-duration: .5s;
+}
+
+@keyframes efect-seta-menu {
+    from {
+        top: 150%;
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes efect-seta-menu {
+    from {
+        top: 150%;
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes efect-menu {
+    from {
+        top: 150%;
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes efect-menu {
+    from {
+        top: 150%;
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes header-icon {
+    from {
+        opacity: 0;
+        top: 80px;
+    }
+    to {
+        opacity: 1;
+        top: 57px;
+    }
+}
+
+@-webkit-keyframes header-icon {
+    from {
+        opacity: 0;
+        top: 80px;
+    }
+    to {
+        opacity: 1;
+        top: 57px;
+    }
+}
+
+.desktop-menu .menu>ul li.primary-item .submenu-box {
+    display: none;
+}
+
+.desktop-menu .menu ul li .submenu-box {
+    position: absolute;
+    width: 100%;
+    background: #FFF;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+    float: left;
+    border: 0;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 17px;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content {
+    padding: 25px 10px;
+    float: left;
+    width: 100%;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content ul {
+    margin: 0!important;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content ul {
+    margin: 0!important;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content li h5,
+.desktop-menu .menu ul li .submenu-box .submenu-content h5 {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content li h5 a,
+.desktop-menu .menu ul li .submenu-box .submenu-content h5 {
+    font-size: 15px!important;
+    font-family: 'hans_kendrickheavy'!important;
+    color: #1a1a1a!important;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content ul.itens-sub+h5 {
+    margin-top: 50px;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content ul.itens-sub.two-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content ul.itens-sub li {
+    line-height: 14px;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-content ul.itens-sub li a {
+    font-size: 12px;
+    color: #898989;
+    padding: 5px 0;
+    line-height: 17px;
+    font-family: 'hans_kendrickregular';
+    text-transform: none;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-footer>div {
+    padding: 0;
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-footer p.livrare-gratuita,
+.desktop-menu .menu ul li .submenu-box .submenu-footer p.tu-si-mini {
+    width: 100%;
+    text-align: center;
+    background: #1a1a1a;
+    color: #8a8a8d;
+    padding: 13px 0;
+    margin: 0;
+    font-family: 'hans_kendrickregular';
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-footer p.livrare-gratuita,
+.desktop-menu .menu ul li .submenu-box .submenu-footer p.tu-si-mini {
+    width: 100%;
+    text-align: center;
+    background: #1a1a1a;
+    color: #8a8a8d;
+    padding: 13px 0;
+    margin: 0;
+    font-family: 'hans_kendrickregular';
+}
+
+.desktop-menu .menu ul li .submenu-box .submenu-footer p.tu-si-mini {
+    background: #23b574;
+    color: #FFF;
+}
+
+.header .icones {
+    position: relative;
+    margin-top: 7px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .icones .btn {
+    background-color: transparent;
+    padding: 0 3px;
+    border: none;
+    box-shadow: none;
+}
+
+.header .icones a.btn-login,
+.header .icones a.btn-login svg,
+.header .mini-cart-xs a.btn-login,
+.header .mini-cart-xs a.btn-login svg {
+    width: 18px;
+    height: 20px;
+    top: -3px;
+}
+
+.header .icones .btn-pesquisa {
+    padding-left: 20px;
+}
+
+.header .icones span.badge {
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.header .icones i {
+    margin-right: 2px;
+    font-size: 20px;
+    line-height: 32px;
+    vertical-align: middle;
+    color: #FFF;
+}
+
+.header .icones .btn-pesquisa.hover .result-search,
+.col-mini-cart:hover #mini-cart-admake {
+    display: block!important;
+    -webkit-animation-name: header-icon;
+    animation-name: header-icon;
+    -webkit-animation-duration: .300s;
+    animation-duration: .300s;
+    top: 57px;
+    opacity: 1;
+}
+
+.header .icones .btn-pesquisa .result-search {
+    position: absolute;
+    right: 4%;
+    background: #FFF;
+    width: 380px;
+    height: auto;
+    top: 57px;
+    opacity: 1;
+    display: none;
+}
+
+.btn-wishlist:hover #wishlistItens {
+    opacity: 1;
+    display: block!important;
+    -webkit-animation-name: header-icon;
+    animation-name: header-icon;
+    -webkit-animation-duration: .300s;
+    animation-duration: .300s;
+    top: 56px;
+    opacity: 1;
+}
+
+#wishlistItens {
+    position: absolute;
+    right: 0;
+    background: #FFF;
+    width: 380px;
+    height: auto;
+    top: 0px;
+    opacity: 0;
+    display: none;
+}
+
+.btn-wishlist:hover #wishlistItens .wishlist-botao {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.btn-wishlist:hover #wishlistItens .wishlist-botao a {
+    margin: 25px 0;
+    font-size: 14px!important;
+    padding: 8px 20px!important;
+}
+
+.wishlistProductItens h3 {
+    white-space: normal;
+    padding: 20px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mosaicos-footer .item .description-box-img a,
+.footer .imbraca-te .botao,
+.home-mosaicos a.botao,
+a.botao {
+    font-size: 18px;
+    color: #020202;
+    border: 2px solid #020202;
+    /* padding: 13px 35px; */
+    padding: 15px 20px;
+    border-radius: 25px;
+    clear: both;
+    margin-top: 10px;
+    display: inline-block;
+    font-family: 'hans_kendrickheavy';
+    letter-spacing: 0.5px;
+}
+
+.mosaicos-footer .item .description-box-img a:hover,
+.footer .imbraca-te .botao:hover,
+.home-mosaicos a.botao:hover,
+a.botao:hover {
+    color: #FFF;
+    background: #020202;
+    text-decoration: none;
+}
+
+.btn .badge {
+    position: relative;
+    top: -1px;
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+#mini-cart-admake {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 380px;
+    z-index: 9999;
+    opacity: 1;
+}
+
+#mini-cart-admake .box-mini-cart {
+    padding: 0 13px 25px;
+    width: 100%;
+    float: left;
+}
+
+#mini-cart-admake .footer-mini-cart {
+    width: 100%;
+    display: block;
+    background: #000;
+    float: left;
+}
+
+#mini-cart-admake .mini-cart-itens {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 350px;
+}
+
+#mini-cart-admake .mini-cart-footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#mini-cart-admake .mini-cart-footer .mini-cart-totais {
+    display: block;
+    width: 100%;
+    float: left;
+    margin: 25px 0 0 0;
+    padding: 0 0 23px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#mini-cart-admake .mini-cart-botao {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+#mini-cart-admake .footer-mini-cart {
+    width: 100%;
+    display: block;
+    background: #000;
+    float: left;
+}
+
+#mini-cart-admake .mini-cart-botao .btn-finalizar-compra:first-child {
+    float: left;
+    color: #1A1A1A;
+    background: #FFF;
+    border-color: #1A1A1A;
+}
+
+#mini-cart-admake .mini-cart-botao .btn-finalizar-compra {
+    float: right;
+    font-size: 14px;
+    font-family: 'hans_kendrickheavy';
+    border: 2px solid #39B54A;
+    background-color: #39B54A;
+    border-radius: 20px;
+    text-align: center!important;
+    min-width: 150px!important;
+    margin: 25px 0;
+    color: #ffffff;
+    padding: 8px 20px;
+}
+
+#mini-cart-admake #mini-cart-admake-total {
+    width: auto;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: 'hans_kendrickheavy';
+}
+
+.col-mini-cart:hover .btn-mini-cart::after {
+    top: 16px;
+    opacity: 1;
+    animation-name: efect-header-mini-cart;
+    -webkit-animation-name: efect-header-mini-cart;
+    animation-duration: .3s;
+    -webkit-animation-duration: .3s;
+}
+
+.header .icones .btn-pesquisa i.fa-search::after,
+.col-mini-cart .btn-mini-cart::after {
+    top: 37px;
+    opacity: 0;
+    display: none;
+}
+
+.btn-mini-cart::after,
+.btn-pesquisa i.fa-search::after {
+    content: "";
+    background: url(https://miniprix.vteximg.com.br/arquivos/seta-head-cart.png) no-repeat;
+    position: absolute;
+    padding-top: 42px;
+    right: 15px;
+    z-index: 999999;
+    display: none;
+    width: 30px;
+    height: 15px;
+    background-position: bottom center;
+}
+
+.header .icones .btn-pesquisa.hover i.fa-search::after {
+    top: 34%;
+    opacity: 1;
+    display: block;
+    animation-name: efect-header-searc;
+    -webkit-animation-name: efect-header-searc;
+    animation-duration: .3s;
+    -webkit-animation-duration: .3s;
+}
+
+.header .icones .btn-pesquisa i.fa-search::after,
+.col-mini-cart .btn-mini-cart::after {
+    top: 37px;
+    opacity: 0;
+    display: none;
+}
+
+.col-mini-cart:hover #mini-cart-admake,
+.col-mini-cart:hover .btn-mini-cart::after,
+.header .icones .btn-pesquisa.hover i.fa-search::after {
+    display: block ! important;
+}
+
+span.fechar {
+    position: absolute;
+    text-align: center;
+    padding: 0 15px;
+    right: 8px;
+    top: 0;
+}
+
+.header .icones .btn-pesquisa .result-search .classSearch {
+    padding: 25px;
+    overflow: auto;
+}
+
+.header .icones .btn-pesquisa .result-search .search-bottom-bar {
+    background: #ec594d;
+}
+
+.header .icones .btn-pesquisa .result-search .busca input[type="button"] {
+    width: 80px;
+    font-weight: bold;
+}
+
+.header .icones .btn-pesquisa .result-search .busca input {
+    padding: 10px 12px;
+    font-size: 16px;
+    height: 45px;
+    color: #1a1a1a;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #dddddd;
+    /* margin-bottom: 30px; */
+}
+
+@media ( min-width: 768px) {
+    @keyframes efect-header-wishlist {
+        from {
+            top: 44px;
+            opacity: 0
+        }
+        to {
+            top: 10px;
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes efect-header-wishlist {
+        from {
+            top: 44px;
+            opacity: 0
+        }
+        to {
+            top: 10px;
+            opacity: 1;
+        }
+    }
+    .btn-wishlist:hover a::after {
+        display: block!important;
+    }
+    .btn-wishlist>a::after {
+        content: "";
+        background: url('https://miniprix.vteximg.com.br/arquivos/seta-head-cart.png') no-repeat;
+        position: absolute;
+        padding-top: 42px;
+        left: -5px;
+        z-index: 999999;
+        display: none;
+        width: 30px;
+        height: 15px;
+        background-position: bottom center;
+        top: 8px;
+        opacity: 1;
+        animation-name: efect-header-wishlist;
+        -webkit-animation-name: efect-header-wishlist;
+        animation-duration: .3s;
+        -webkit-animation-duration: .3s;
+    }
+}
+
+.btn-wishlist>a {
+    position: relative;
+}
+
+@keyframes efect-header-mini-cart {
+    from {
+        top: 44px;
+        opacity: 0
+    }
+    to {
+        top: 16px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes efect-header-mini-cart {
+    from {
+        top: 44px;
+        opacity: 0
+    }
+    to {
+        top: 16px;
+        opacity: 1;
+    }
+}
+
+@keyframes efect-header-searc {
+    from {
+        top: 37px;
+        opacity: 0
+    }
+    to {
+        top: 16px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes efect-header-searc {
+    from {
+        top: 37px;
+        opacity: 0
+    }
+    to {
+        top: 16px;
+        opacity: 1;
+    }
+}
+
+.fullbanner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-inner-mobile img {
+    width: 100%;
+    height: 100%;
+}
+
+#slick-1 .slick-dots li {
+    width: 40px;
+    height: 5px;
+    background: #ccc;
+}
+
+#slick-1 .slick-dots li button {
+    width: 40px;
+    height: 5px;
+}
+
+#slick-1 .slick-dots li.slick-active,
+#slick-1 .slick-dots li:hover {
+    background: #777;
+}
+
+#slick-1 .slick-dots li button,
+#slick-1 .slick-dots li button:before {
+    color: transparent;
+    opacity: 0;
+}
+
+@media (min-width: 1025px) {
+    div#home-extra-middle {
+        padding: 55px 0;
+    }
+    div#home-extra-middle .square {
+        top: 65px;
+        left: 65px;
+        width: 44px;
+        height: 44px;
+    }
+    div#home-extra-middle .oblique {
+        top: 50%;
+        bottom: auto;
+        margin-top: -112px;
+    }
+}
+
+@media (min-width: 768px) {
+    .prateleira.vitrine>ul>li,
+    .n1colunas>ul>li,
+    .n2colunas>ul>li,
+    .n3colunas>ul>li,
+    .n4colunas>ul>li,
+    .n5colunas>ul>li {
+        width: 50%;
+        padding: 0 15px 35px;
+    }
+    .prateleira.vitrine>ul>li,
+    .n1colunas>ul>li,
+    .n2colunas>ul>li,
+    .n3colunas>ul>li,
+    .n4colunas>ul>li,
+    .n5colunas>ul>li {
+        width: 33.3333%;
+        padding: 0 13px 35px 13px;
+    }
+    .home-shelves .prateleira ul li {
+        width: 25%;
+    }
+}
