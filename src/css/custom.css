@@ -33,6 +33,11 @@
     filter: "alpha(opacity=100)";
     -ms-filter: "alpha(opacity=100)";
 }
+
+#noticia_relacionada {
+    width: 60%;
+}
+
 @media (max-width: 767px){
     .trailer_box.plain .desc {
         padding: 15px;
