@@ -33,3 +33,11 @@
     filter: "alpha(opacity=100)";
     -ms-filter: "alpha(opacity=100)";
 }
+@media (max-width: 767px){
+    .trailer_box.plain .desc {
+        padding: 15px;
+    }
+    .trailer_box.plain .desc h2 {
+        font-size: large;
+    }
+}
