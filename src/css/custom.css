@@ -37,6 +37,18 @@
 #noticia_relacionada {
     width: 60%;
 }
+#noticia_relacionada h2{
+    font-size: small;
+}
+#noticia_relacionada .desc{
+    font-size: small;
+    padding: 5px;
+}
+#noticia_relacionada .subtitle{
+    font-size: x-small;
+    text-align: center;
+    word-break: break-all;
+}
 
 @media (max-width: 767px){
     .trailer_box.plain .desc {
