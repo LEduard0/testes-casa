@@ -49,7 +49,9 @@
     text-align: center;
     word-break: break-all;
 }
-
+.iframe {
+    padding-bottom: 20px;
+}
 @media (max-width: 767px){
     .trailer_box.plain .desc {
         padding: 15px;
