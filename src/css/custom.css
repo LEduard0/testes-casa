@@ -33,3 +33,30 @@
     filter: "alpha(opacity=100)";
     -ms-filter: "alpha(opacity=100)";
 }
+
+#noticia_relacionada {
+    width: 60%;
+}
+#noticia_relacionada h2{
+    font-size: small;
+}
+#noticia_relacionada .desc{
+    font-size: small;
+    padding: 5px;
+}
+#noticia_relacionada .subtitle{
+    font-size: x-small;
+    text-align: center;
+    word-break: break-all;
+}
+.iframe {
+    padding-bottom: 20px;
+}
+@media (max-width: 767px){
+    .trailer_box.plain .desc {
+        padding: 15px;
+    }
+    .trailer_box.plain .desc h2 {
+        font-size: large;
+    }
+}
