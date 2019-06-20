@@ -182,6 +182,7 @@ const calculo = usuarios
     .filter(usuario => usuario.idade <= 50);
 
 console.log(calculo);*/
+
 /*Exercicio 3 - Modulo 1 
 // 3.1
 const arr = [1, 2, 3, 4, 5];
@@ -201,7 +202,7 @@ console.log(mostraUsuario(nome));
 const promise = () => new Promise((resolve, reject) => resolve());   
 console.log(promise)*/
 
-/*Exercicio 4 - Modulo 1 */
+/*Exercicio 4.1 - Modulo 1 
 const empresa = {
     nome: 'Rocketseat',
     endereco: {
@@ -212,4 +213,84 @@ const empresa = {
 const { nome, endereco: { cidade, estado } } = empresa;
 console.log(nome);
 console.log(cidade);
-console.log(estado);
+console.log(estado);*/
+
+/*Exercicio 4.2 - Modulo 1
+function mostraInfo({ nome, idade }) {
+    return `${nome} tem ${idade} anos.`;
+}
+console.log(mostraInfo({ nome: "Diego", idade: 23 }));*/
+
+/*Exercicio 5.1 - Modulo 1 - REST
+const arr = [1, 2, 3, 4, 5, 6];
+const [x, ...y] = arr;
+console.log(x);
+console.log(y);
+
+function soma(...nums) {
+    return nums.reduce((a, b) => a + b);
+}
+
+console.log(soma(1, 2, 3, 4, 5, 6)); // 21
+console.log(soma(1, 2)); // 3 */
+
+/*Exercicio 5.2 - Modulo 1 - SPREAD
+const usuario = {
+    nome: 'Diego',
+    idade: 23,
+    endereco: {
+        cidade: 'Rio do Sul',
+        uf: 'SC',
+        pais: 'Brasil',
+    }
+};
+const usuario2 = {...usuario, nome: 'Gabriel'};
+console.log(usuario2);
+const usuario3 = {...usuario, cidade: 'Lontras'};
+console.log(usuario3);*/
+
+/*Exercicio 6 - Modulo 1 - Template Literals 
+const usuario = 'Diego';
+const idade = 23;
+console.log(`O usuário ${usuario} possui ${idade} anos`);*/
+
+/*Exercicio 7 - Modulo 1 - Object Short Syntax 
+const nome = 'Diego';
+const idade = 23;
+const usuario = {
+ nome,
+ idade,
+ cidade: 'Rio do Sul',
+};
+console.log(usuario);*/
+
+/*Exercicio 1 - Modulo 2 
+// 1.1
+import ClasseUsuario from "./functions";
+ClasseUsuario.info();
+
+// 1.2
+import { idade } from "./functions";
+console.log(idade);
+
+// 1.3
+import Usuario, { idade as IdadeUsuario } from "./functions";*/
+
+/*Modulo 3 */
+const minhaPromise = () => new Promise((resolve, reject) => {
+    setTimeout(() => { resolve('OK') }, 2000);
+})
+/*minhaPromise()
+    .then(response => {
+        console.log(response)
+    })
+    .catch(err => {
+
+    });*/
+
+async function executaPromise(){
+    const response = await minhaPromise();
+
+    console.log(response)
+}
+executaPromise();
