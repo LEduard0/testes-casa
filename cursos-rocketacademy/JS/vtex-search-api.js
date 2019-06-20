@@ -1,5 +1,6 @@
 $(".product-long").each(function () {
     var productId = $(this).find('.prateleira-id').text();
+    //dis: se refere a cada um dos produtos 
     var dis = $(this);
     $.ajax({
         "async": true,
@@ -10,8 +11,11 @@ $(".product-long").each(function () {
             "content-type": "application/json"
         }
     }).done(function (data) {
+        //data: é a informação que volta pra gente
+        //dimensionsMap é uma delas
         var qtdColor = data.dimensionsMap.Color.length;
         var qtdSizes = data.dimensionsMap.Size.length;
+        //empty(): Para limpar o paragrafo antes de colocar informações novas
         $(dis).find('#shelf-color').empty();
         $(dis).find('#shelf-size').empty();
         for (i=0; i < qtdColor ; i++){
