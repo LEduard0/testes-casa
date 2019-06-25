@@ -293,4 +293,99 @@ async function executaPromise(){
 
     console.log(response)
 }
-executaPromise();*/
+executaPromise()
+
+import axios from 'axios';
+
+class api {
+    static async getUserInfo(username){
+        const response = await axios.get(`https://api.github.com/users/${username}`);
+        
+        console.log(response);
+    }
+}
+api.getUserInfo('LEduard0');;*/
+//Aplicação de teste
+import api from './api';
+class app {
+    constructor() {
+        this.repositories = [];
+
+        this.formEl = document.getElementById('repo-form');
+        this.inputEl = document.querySelector('input[name=repositorie]')
+        this.listEl = document.getElementById('repo-list');
+
+        this.registerHandlers();
+    }
+    registerHandlers() {
+        this.formEl.onsubmit = event => this.addRepository(event);
+    }
+
+    setLoading(loading = true){
+        if (loading = true){
+            let loadingEl = document.createElement('span');
+            loadingEl.appendChild(document.createTextNode('Carregando...'));
+            loadingEl.setAttribute('id', 'loading');
+        } else {
+            document.getElementById('loading').remove();
+        }
+    }
+
+    async addRepository(event) {
+        event.preventDefault();
+
+        const repoInput = this.inputEl.value;
+
+        if (repoInput.length === 0)
+            return;
+
+        this.setLoading();
+
+        try {
+            const response = await api.get(`/repos/${repoInput}`)
+
+            const { description, name, html_url, owner: { avatar_url } } = response.data;
+
+            this.repositories.push({
+                name,
+                description,
+                avatar_url,
+                html_url,
+            });
+            this.render();
+        } catch (err) {
+            alert('Repositorio não foi encontrado');
+        }
+
+        this.setLoading(false);
+    }
+    render() {
+        this.listEl.innerHTML = '';
+
+        this.repositories.forEach(repo => {
+            let imgEl = document.createElement('img');
+            imgEl.setAttribute('src', repo.avatar_url);
+
+            let titleEl = document.createElement('b');
+            titleEl.appendChild(document.createTextNode(repo.name))
+
+            let descEl = document.createElement('p')
+            descEl.appendChild(document.createTextNode(repo.description))
+
+            let linkEl = document.createElement('a');
+            linkEl.setAttribute('target', '_blank')
+            linkEl.setAttribute('href', repo.html_url)
+            linkEl.appendChild(document.createTextNode('Acessar'))
+
+            let listItemEl = document.createElement('li');
+            listItemEl.appendChild(imgEl);
+            listItemEl.appendChild(titleEl);
+            listItemEl.appendChild(descEl);
+            listItemEl.appendChild(linkEl);
+
+            this.listEl.appendChild(listItemEl)
+        });
+    }
+}
+
+new app()
