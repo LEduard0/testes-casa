@@ -276,7 +276,7 @@ console.log(idade);
 // 1.3
 import Usuario, { idade as IdadeUsuario } from "./functions";*/
 
-/*Modulo 3 */
+/*Modulo 3
 const minhaPromise = () => new Promise((resolve, reject) => {
     setTimeout(() => { resolve('OK') }, 2000);
 })
@@ -286,11 +286,11 @@ const minhaPromise = () => new Promise((resolve, reject) => {
     })
     .catch(err => {
 
-    });*/
+    });
 
 async function executaPromise(){
     const response = await minhaPromise();
 
     console.log(response)
 }
-executaPromise();
+executaPromise();*/
